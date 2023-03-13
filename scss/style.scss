@@ -1,1 +1,94 @@
 @import 'reset';
+body {
+	color: white;
+	font-family: 'Roboto';
+	font-style: normal;
+}
+
+.bg {
+	background: url('./../image/bg.jpg') 0 0/100% 100% no-repeat;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.timer {
+	position: absolute;
+	left: 10%;
+	bottom: 15%;
+	&__title {
+		font-weight: 400;
+		font-size: 40px;
+		line-height: 47px;
+	}
+
+	&__strong {
+		font-weight: 700;
+		font-size: 56px;
+		line-height: 66px;
+		margin: 8px 0;
+	}
+
+	&__block {
+		display: flex;
+		column-gap: 6vw;
+	}
+
+	&__hours {
+	}
+
+	&__number {
+		font-weight: 500;
+		font-size: 180px;
+		line-height: 211px;
+	}
+
+	&__under {
+		font-weight: 400;
+		font-size: 28px;
+		line-height: 33px;
+		/* identical to box height */
+
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	&__minutes {
+	}
+
+	&__seconds {
+	}
+}
+
+@media (width < 1600px) {
+	.bg {
+		background-size: cover;
+		background-position: 50% 50%;
+	}
+	.timer {
+		&__number {
+			font-size: 100px;
+			text-align: center;
+		}
+	}
+}
+
+@media (width < 800px) {
+	.timer {
+		margin: 0 auto;
+		left: 50%;
+		transform: translateX(-50%);
+		text-align: center;
+		&__title {
+			font-size: 36px;
+		}
+		&__block {
+			margin: 0 auto;
+			justify-content: center;
+			align-items: center;
+		}
+		&__strong {
+			font-size: 42px;
+		}
+	}
+}

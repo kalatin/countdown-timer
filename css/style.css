@@ -70,3 +70,80 @@ h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: 400;
 }
+
+body {
+  color: white;
+  font-family: "Roboto";
+  font-style: normal;
+}
+
+.bg {
+  background: url("./../image/bg.jpg") 0 0/100% 100% no-repeat;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.timer {
+  position: absolute;
+  left: 10%;
+  bottom: 15%;
+}
+.timer__title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+}
+.timer__strong {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 66px;
+  margin: 8px 0;
+}
+.timer__block {
+  display: flex;
+  -moz-column-gap: 6vw;
+       column-gap: 6vw;
+}
+.timer__number {
+  font-weight: 500;
+  font-size: 180px;
+  line-height: 211px;
+}
+.timer__under {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (width < 1600px) {
+  .bg {
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  .timer__number {
+    font-size: 100px;
+    text-align: center;
+  }
+}
+@media (width < 800px) {
+  .timer {
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  .timer__title {
+    font-size: 36px;
+  }
+  .timer__block {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .timer__strong {
+    font-size: 42px;
+  }
+}

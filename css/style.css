@@ -146,4 +146,10 @@ body {
   .timer__strong {
     font-size: 42px;
   }
+  .timer__number {
+    font-size: 13vw;
+  }
+  .timer__under {
+    font-size: 3vw;
+  }
 }

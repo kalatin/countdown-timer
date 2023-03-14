@@ -43,7 +43,7 @@ class CountdownTimer {
 }
 
 let timer = new CountdownTimer(
-	new Date('Mar 19 2023 16:56:00'),
+	new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate() + 1),
 	document.querySelector('.timer__days > .timer__number'),
 	document.querySelector('.timer__hours > .timer__number'),
 	document.querySelector('.timer__minutes > .timer__number'),
